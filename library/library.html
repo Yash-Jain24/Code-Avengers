@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="../index.html"><img src="images/Logonew.png" alt="IIIT TIRUCHIRAPPALLI" width="50px"></a>
+                </div>
+                <nav>
+                  <ul>
+                      <li><a class="nav-link" href="library.html">Library</a></li>
+                      <li><a class="nav-link" href="../contact.html">Contacts</a></li>
+
+                      <li>
+                          <form id="search-form" action="#" method="GET">
+                              <input id="search-input" type="text" placeholder="Search...">
+                              <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+                                <div class="alan-btn"></div>
+                              </button>
+                          </form>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+            <div class="row row-lib">
+                <div class="col-2">
+                    <!-- <h1>LIBRARY</h1> -->
+                    <h1>LIBRARY  🕮</h1>
+                    <div class="para">
+                      <p>
+                        Welcome, Librarian!
+                        Your Essential Library Resource is Ready <br>
+                        📚 Library Catalog: Access our extensive collection of books, journals, and resources to assist your patrons in their quest for knowledge.
+                        <br>
+                        🔍 Quick Filter: Use the Filter bar at the top of books to find materials efficiently. Simply select the book type.
+                        <br>
+                        🌟 Stay Informed: Keep up with new additions, events, and news. Subscribe to our updates for the latest information.
+                        <br>
+                        🏛️ Visit Us: Explore our physical library branch for a hands-on experience. We're here to support you and your patrons.
+                        <br>
+                        How to Navigate <br>
+
+                        📌 Filter: Start by using the filter bar for fast results.
+                        <br>
+                        💼 Library Services: Discover available services for librarians, including interlibrary loans, catalog management, and more.
+                        <br>
+                        📅 Upcoming Events: Stay informed about library events and programs.
+                        <br>
+                        📞 Contact: Reach out for assistance or inquiries.
+                        
+                        Welcome to your trusted library resource. Let's make knowledge accessible together! 
+                      </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="students" src="images/openbook.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+   </div>
+</div>
+<!--------------  BRANCHES  ----------------->
+
+<section id="content">
+  <div class="filter">
+      <label for="branch">Select Branch:</label>
+      <select id="branch">
+        <option value="">All</option>
+        <option value="cs">Computer Science Engineering</option>
+        <option value="ec">Electronics and Communication Engineering</option>
+        <option value="gk">General Knowledge</option>
+      </select>
+    </div>
+  <!-- <h2>Available Books</h2> -->
+  <div class="books_available"><h2>Books in Inventory</h2></div>
+  <div id="bookList">
+    <div data-branch="gk" id="book1" class="book">
+      <a href="https://bit.ly/46FmYSR">
+      <img src="images/book30.jpg" alt="Power of Habit"></a>
+      <h3 class="bookName">Power of Habit</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button class="decreaseButton">Allot</button>
+  </div>
+  <div data-branch="gk" id="book2" class="book">
+    <a href="https://bit.ly/thinking-fast">
+      <img src="images/book29.jpg" alt="Thinking Fast & Slow"></a>
+      <h3>Thinking Fast & Slow</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button class="decreaseButton">Allot</button>
+  </div>
+    <div data-branch="cs" id="book3" class="book">
+      <a href="https://gfgc.kar.nic.in/sirmv-science/GenericDocHandler/138-a2973dc6-c024-4d81-be6d-5c3344f232ce.pdf">
+      <img src="images/book2.jpg" alt="Book 2"></a>
+      <h3>Java Programming</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>     
+    </div>
+    <div data-branch="cs" id="book4" class="book">
+      <a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf"></a>
+      <img src="images/book1.jpg" alt="Book 1"></a>
+      <h3>Data Structures <br> using C</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book5" class="book">
+      <a href="https://vipulzblog.files.wordpress.com/2019/08/e_balagurusamy-object_oriented_programming_with_c.pdf">
+      <img src="images/book13.png" alt="Book 13"></a>
+      <h3>OOPS with C++</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book6" class="book">
+      <a href="https://vipulzblog.files.wordpress.com/2019/08/introduction.to_.algorithms.clrs_.3rd.edition.sep_.2009.pdf">
+      <img src="images/book14.png" alt="Book 14"></a>
+      <h3>Intro to Algorithms</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book7" class="book">
+      <a href="https://vipulzblog.files.wordpress.com/2019/08/database-system-concepts-6th-edition.pdf">
+      <img src="images/book15.png" alt="Book 15"></a>
+      <h3>Database System Concepts</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book8" class="book">
+      <a href="https://jntukucen.ac.in/ebook_files/116.pdf">
+      <img src="images/book16.png" alt="Book 16"></a>
+      <h3>Data Mining. Concepts and Techniques</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book9" class="book">
+      <a href="https://www.ktunotes.in/wp-content/uploads/2018/05/Theory-of-Computation-John-C.-Martin-min.pdf">
+      <img src="images/book17.png" alt="Book 17"></a>
+      <h3>Theory-of-Computation</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+      <div data-branch="cs" id="book10" class="book">
+      <a href="https://shorturl.at/yBDGP">
+      <img src="images/book18.png" alt="Book 18"></a>
+      <h3>Machine Learning</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <!-- New added books -->
+    <div data-branch="cs" id="book11" class="book">
+      <a href="http://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf">
+      <img src="images/book19.png" alt="Book 19"></a>
+      <h3>Systems Analysis & Design</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book12" class="book">
+      <a href="https://cseweb.ucsd.edu/classes/wi19/cse124-a/courseoverview/compnetworks.pdf">
+      <img src="images/book20.png" alt="Book 20"></a>
+      <h3>Computer Networks</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book13" class="book">
+      <a href="https://content.kopykitab.com/ebooks/2014/10/3685/sample/sample_3685.pdf">
+      <img src="images/book3.jpg" alt="Book 3"></a>
+      <h3>Railway Bridges and <br>Tunnels</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book14" class="book">
+      <a href="https://vipulzblog.files.wordpress.com/2018/08/strength-of-material-by-r-k-bansal-31.pdf">
+      <img src="images/book4.jpg" alt="Book 4"></a>
+      <h3>Strengths of <br>Materials</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book15" class="book">
+      <a href="https://www.iare.ac.in/sites/default/files/lecture_notes/EG_LECTURE_NOTES.pdf">
+      <img src="images/book5.jpg" alt="Book 5"></a>
+      <h3>Engineering Geology</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book16" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book6.jpg" alt="Book 6"></a>
+      <h3>Electronic<br> instrumentation<br> and Measurements</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book17" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book7.jpg" alt="Book 7"></a>
+      <h3>Network Analysis</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book18" class="book">
+      <a href="https://edutechlearners.com/download/books/An%20Introduction%20to%20Microprocessor%208085%20PDF%20by%20Dr.%20K%20K%20Kausik.pdf">
+      <img src="images/book22.png" alt="Book 22"></a>
+      <h3>An Introduction to Microprocessor 8085</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book19" class="book">
+      <a href="https://jntukucen.ac.in/ebook_files/155.pdf">
+      <img src="images/book23.png" alt="Book 23"></a>
+      <h3>Advanced Microprocessors and Peripherals</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book20" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book8.jpg" alt="Book 8"></a>
+      <h3>Manufacturing <br>Processes</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book21" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book9.jpg" alt="Book 9"></a>
+      <h3>An Introduction To <br>Thermodynamics</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book22" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book10.jpg" alt="Book 10"></a>
+      <h3>Machine Drawing</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="gk" id="book23" class="book">
+      <a href="https://drive.google.com/file/d/1EFWHhaIjwXknOfWyfoTvgTrnG666WWkV/view">
+      <img src="images/book21.png" alt="Book 21"></a>
+      <h3>Applied Thermodynamics</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book24" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book11.jpg" alt="Book 11"></a>
+      <h3>Object Oriented <br>Programming <br>Methodology</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book25" class="book">
+      <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf">
+      <img src="images/book12.jpg" alt="Book 12"></a>
+      <h3>Electric Circuits and<br> Electronics Devices</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="ec" id="book26" class="book">
+      <a href="https://ia800607.us.archive.org/3/items/DigitalLogicAndComputerDesignByM.MorrisMano2ndEdition/Digital%20Logic%20And%20Computer%20Design%20By%20M.%20Morris%20Mano%20%282nd%20Edition%29.pdf">
+      <img src="images/book24.png" alt="Book 12"></a>
+      <h3>Digital logic and <br> Compiler Design</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book27" class="book">
+       <a href="https://faculty.ksu.edu.sa/sites/default/files/rosen_discrete_mathematics_and_its_applications_7th_edition.pdf">
+      <img src="images/book25.png"alt="Book 12"></a>
+      <h3>Discrete <br> Mathematics</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book28" class="book">
+      <a href="https://www.shahucollegelatur.org.in/Department/Studymaterial/sci/it/BCS/FY/book.pdf">
+      <img src="images/book26.png" alt="Book 12"></a>
+      <h3>Graph <br> Theory</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+    <div data-branch="cs" id="book29" class="book">
+      <a href="https://drive.google.com/file/d/1n_m4FNtoDmRcNEby4_DR_aLM7jeDqPL0/view">
+      <img src="images/book27.png" alt="Book 12"></a>
+      <h3>Higher Engineering<br> Mathematics</h3>
+      <h4 class="bookCount">Available - 10</h4>
+      <br>
+      <button style="border: 200px" class="decreaseButton">Allot</button>
+    </div>
+  </div>
+</section>
+        <footer>   
+                 <span class="return-to-top" id="returnToTop">
+                      <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
+                 </span>
+                 <span class="toggle-mode">
+                   <img class="sun"  data-set="moon" src="images/Moontoggle.png"  alt="light-mode">
+                   <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
+                 </span>
+        </footer>
+ <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+    <script>
+        var alanBtnInstance = alanBtn({
+          key: "410d98d30ce6489164a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+          bottom: '50px',
+   left: '50px',
+          onCommand: function (commandData) {
+           if (commandData && commandData.command === 'openURL') {
+                   if (commandData.target === '_blank'){
+                     window.open(commandData.url,'_newtab' + Math.floor(Math.random()*999999));
+                   } else {
+                     window.location.href = commandData.url;
+                   }
+                 }
+           },
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
+    <script src="../script.js"></script>
+    <script src="../app.js"></script>
+    <script src="library.js"></script>
+</body>
+</html>
