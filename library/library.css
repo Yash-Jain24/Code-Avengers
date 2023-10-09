@@ -81,34 +81,17 @@ section#content {
     }
   }
 
-  #bookCount{
-  text-align: center;
-  }
-
-  #decreaseButton{
-    position: relative;
-    left: 33%;
-    border: 200px;
-    font-size: 20px;
-    background-color: #b700ff;
-    color: #d9f233;
-    height: 40px;
-    min-width: 80px;
-    margin: auto;
-    border-radius: 20px;
-    align-self: center;
-  }
-
   .bookCount{
     text-align: center;
     }
 
     .decreaseButton{
+      cursor: pointer;
       position: relative;
       left: 33%;
       border: 200px;
       font-size: 20px;
-      background-color: #b700ff;
+      background-color: #2600ff;
       color: #d9f233;
       height: 40px;
       min-width: 80px;
@@ -116,3 +99,4 @@ section#content {
       border-radius: 20px;
       align-self: center;
     }
+
